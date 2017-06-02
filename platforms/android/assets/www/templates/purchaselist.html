@@ -1,0 +1,99 @@
+   
+<ion-view style="background: #eff1f0"  >
+
+<ion-header-bar align-title="left" class="bar-royal">
+  <div class="bar_left">
+   <i  ng-click="myGoBack()" class="button-icon icon ion-arrow-left-c"></i>
+  </div>
+  <div class="bar_left" style="font-size: 150%">
+   <i >Cart</i>
+  </div>
+ 
+  
+</ion-header-bar>
+
+   
+
+      
+
+
+ <ion-content   scroll="false"  >
+            
+            
+
+                      <div class="card">
+                      <div class="itemname"  >
+                                    <p style="font-size: 150%;text-align: ">{{title}}</p>
+                        </div>
+                        <ion-slide-box>
+
+                                 <ion-slide >
+                                        <div class = "slide-wrapper slider-pager-page slider-pager-page.active box1">
+                                           <img id="imgid" src="{{img1}}">
+                                          
+                                        </div>
+                                 </ion-slide>
+
+                               <ion-slide>
+                                  <div class = "slide-wrapper slider-pager-page slider-pager-page.active box1">
+                                    <img  src="https://c1d17324fd03d3c1554c-f8d9b202a9cbdc7dfbad7882f67faaf4.ssl.cf1.rackcdn.com/ROYBXP825-main-1_royal-oak-saphire-round-dining-set-with-four-chairs-in-teak-finish-1482742720.jpg">
+                                  </div>
+                               </ion-slide>
+
+                               <ion-slide>
+                                  <div class = "slide-wrapper slider-pager-page slider-pager-page.active box1">
+                                    <img  src="https://c1d17324fd03d3c1554c-f8d9b202a9cbdc7dfbad7882f67faaf4.ssl.cf1.rackcdn.com/ROYGDJ361-main-1_royal-oak-daffodil-tv-stand-with-natural-finish-1446034339.jpg">
+                                  </div>
+                               </ion-slide>
+                               <ion-slide>
+                                  <div class = "slide-wrapper slider-pager-page slider-pager-page.active box1">
+                                    <img src="https://c1d17324fd03d3c1554c-f8d9b202a9cbdc7dfbad7882f67faaf4.ssl.cf1.rackcdn.com/ROYBXP825-main-5_royal-oak-saphire-round-dining-set-with-four-chairs-in-teak-finish-1482742793.jpg">
+                                  </div>
+                               </ion-slide>
+                               <ion-slide>
+                                  <div class = "slide-wrapper slider-pager-page slider-pager-page.active box1">
+                                    <img src="https://c1d17324fd03d3c1554c-f8d9b202a9cbdc7dfbad7882f67faaf4.ssl.cf1.rackcdn.com/ROYBXP825-main-3_royal-oak-saphire-round-dining-set-with-four-chairs-in-teak-finish-1482742756.jpg">
+                                  </div>
+                               </ion-slide>
+
+                        </ion-slide-box>
+
+
+         <div class="divider_style" style="margin-left: 10%">
+                  <div class="row">
+                       <div class ="col col-75">
+                             <strike style="color: red"><p style="color: red;  font-size: 150%;" > &#8377;{{price}}</p></strike>
+                                 <p  id="price" style=" font-size: 200%;" > &#8377;{{discount_price}} </p>
+                        </div>
+                       
+
+                        <div class="col">
+                          
+                             <div class="discount" >
+                                <P style="margin-left:.6em" id="off">44% OFF </p>
+                             </div>
+
+                        </div>
+
+                  </div>
+                  
+           </div><!--  divider end -->
+         <div >
+           <p style="text-align: center;">The Royal Oak Daffodil TV stand is compact in size, offers brilliant value and has a modern, stylish design. The TV stand has a natural and black finish, and aluminium legs, which adds to its stylish appearance. The TV stand has one open shelf and two pull-out drawers to store TV and entertainment accessories.</p>
+         </div>
+          
+           </div>  <!-- card -->
+
+ 
+  </ion-content>
+      <div class="bar bar-footer  ">
+         
+             <button class="button_Addtocart" ng-click="addToCart(id,img1,title,discount_price)">Add To Cart</button>
+        
+            
+              <button class="button_BuyNow" ng-click="addToCart(id,img1,title,price)">Buy Now</button>
+           
+       </div>
+
+   
+    </ion-view>

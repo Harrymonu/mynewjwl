@@ -1,0 +1,61 @@
+<!-- 
+
+
+<ion-footer-bar class="bar-footer bar-dark"   ng-show="!scrolling">
+ 
+  	 <div class="row" style="">
+  	 <div class="buttons "  style="margin-left: 10%; margin:auto;">
+        <button class=" button-icon footer_btn_name" ng-click="data.grid = !data.grid">
+          <i class="icon ion-grid" ng-if="!data.grid"></i>
+          <i class="icon ion-navicon" ng-if="data.grid"></i>
+       <a style="text-align: center;float: right"> GIRD </a> </button>
+        </button>
+      </div>
+<div class="buttons "  style="margin:auto;">
+        <button class=" button-icon footer_btn_name"  ng-click="showfilter();" >
+      <i class="icon ion-arrow-up-c"></i>
+      <i class="icon ion-arrow-down-c"></i>
+     <a style="text-align: center;float: right">SORT </a> </button> 
+          
+    </button>
+      </div>
+
+
+
+<div class="buttons  ">
+        <button  class=" button-icon footer_btn_name " ng-click="showfilter();" >
+          <i class="icon ion-funnel"> </i>
+<a style="text-align: center;float: right"> FILTER </a> </button>
+     
+     </div>
+ 
+
+</ion-footer-bar>
+
+
+  -->
+ <ion-footer-bar  ng-show="!scrolling">
+
+  <div class = "tabs tabs-icon-left">
+
+    <a class = "tab-item" ng-click="showfilter();">
+      <i class = "icon ion-arrow-swap"></i>
+      SORT BY
+   </a>
+   
+   <a class = "tab-item" ng-click="data.grid = !data.grid" >
+   <i class="icon ion-grid" ng-if="!data.grid"></i>
+          <i class="icon ion-navicon" ng-if="data.grid"></i>
+      LIST
+   </a>
+  
+   <a class = "tab-item" ng-click="showfilter();">
+      <i class = "icon ion-funnel"></i>
+      FILTER
+   </a>
+
+</div>
+</ion-footer-bar>
+
+
+      

@@ -1,0 +1,65 @@
+
+    <ion-view >
+    <ion-header-bar align-title="left" class="bar-royal">
+  <div class="bar_left">
+   <i  ng-click="myGoBack()" class="button-icon icon ion-arrow-left-c"></i>
+  </div>
+  <div class="bar_left" style="font-size: 150%">
+   <i >Add Item</i>
+  </div>
+ 
+  
+</ion-header-bar>
+
+<ion-content scroll="true" >
+<div class="padding">
+   <div style="margin-top: 2em">
+   <label style="width: 85%;margin-left: 8%" class = "item item-input item-select">
+   <div class = "input-label">
+      Select Item Name
+   </div>
+  
+   <select id="itemtype" >
+      <option>Bed</option>
+      <option selected>Chair</option>
+      <option>Sofas</option>
+   </select>
+</label>
+</div>
+  
+        <div class="padding">
+                 <input  style="height: 50px;" type="text"  required="true"  ng-model="data.titleValue" placeholder="Title"/>
+                <p style="margin-top: 1em "></p>
+                
+                 <input  style="height: 100px;" type="text"  required="true"  ng-model="data.subtitleValue" placeholder="Subtitle"/>
+                <p style="margin-top: .5em "></p>
+                 <input type="tel" style=" width: 100%; box-sizing: border-box;border: 1px;border: 1px solid  #f2400e;" required="true"  ng-model="data.priceValue" placeholder="Price"/>
+                <p style="margin-top: .5em "></p>
+                 <input  type="tel" style=" width: 100%; box-sizing: border-box;border: 1px;border: 1px solid  #f2400e;"  required="true"  ng-model="data.discountValue" placeholder="Discount"/>
+                <p style="margin-top: .5em "></p>
+                 
+                      
+        </div>
+ 
+    
+    
+         <div >
+            <!-- <button  class="button" ng-click ="choosePhoto()">Select Image </button> -->
+            
+           <input type="file" placeholder="NAME" onchange="change_image()" ng-model="data.image">
+
+    </div>
+
+     <div style="margin-top: 2em">
+            <button  class="button" ng-click ="adddata()">Add</button>
+    </div>
+     
+        </div>
+        
+         
+
+
+</ion-content>
+
+
+</ion-view>

@@ -1,0 +1,69 @@
+
+<ion-pane>
+   
+
+ <ion-content on-scroll="scroll()" on-swipe="scroll()" on-scroll-complete="onComplete()"  style="margin-top: 5em">
+  <ion-list ng-class="{'grid-container' : data.grid , '' : !data.grid}">
+        <div ng-repeat="item in playlists "  ng-class="{'grid col col-50' : data.grid , '' : !data.grid}">
+ 
+    <div  class="card"  >
+
+               <div  id="{{img1}}">
+                    <img class="img1"   src="{{item.img1}}" id="img{{item.id}}"/>
+                    </div >
+                   
+
+                 
+                  <div class="itemname">
+                    {{item.title}} 
+                  </div>
+
+
+                 <div class="product_details">
+                
+                                                                                                                                    
+                      Extremely practical, super comfortable and superb value, this Royal Oak sofa cum bed is a must-have for homes with space constraints. The sofa cum bed can be quickly changed from sofa to bed or vice versa, and its plush seating makes it ideal for either use. The sofa cum bed has soft fabric upholstery with plush cushions.
+               </div>
+
+        
+
+            <div class="divider_style" style="margin-left: 10%">
+                  <div class="row">
+                       <div class ="col col-100">
+                             <strike style="color: red; float: left;" ><p style="color: red;  font-size:relative;" > &#8377;{{item.price}}  </p></strike>
+                                 <p  id="price{{item.id}}" style=" font-size:relative; position: absolute;margin-left : 20%;" > &#8377;{{item.price-400}} </p>
+                        </div>
+                       
+
+<!--                         <div class="col col-25">
+                          
+                             <div class="discount" >
+                                <i style="font-size: 60%;" > 44% OFF </i>
+                             </div>
+
+                        </div> -->
+
+                  </div>
+                  
+           </div>
+       
+       
+        <div class="shopnowbuttondiv">
+               <button class="shopnowbutton" ng-click="showProductInfo(item.id,item.img1,item.title,item.price,item.price-300)" >Shop Now<i class="icon ion-ios-cart-outline"></i></button>
+
+        </div>
+              
+</div>
+
+ 
+
+ </div>
+      </ion-list>
+
+      </ion-content>
+
+    
+
+      <div style="margin-top: 10em" ng-include="'templates/footerbar.html'" ></div>
+
+</ion-pane>

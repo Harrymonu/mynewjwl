@@ -1,0 +1,75 @@
+<ion-view view-title="Your Title!" style="background-color: #f1f1f1;"  >
+
+  <ion-header-bar align-title="left" class="bar-royal">
+    <div class="bar_left">
+      <i  ng-click="myGoBack()" class="button-icon icon ion-arrow-left-c"></i>
+    </div>
+    <div class="bar_left" style="font-size: 150%">
+      <i >Vote</i>
+    </div>
+
+
+  </ion-header-bar>
+
+
+
+
+
+
+  <ion-content style="margin-top: 1.0em ;"  ng-controller="voteCtrl" >
+
+
+
+    <div class="col-col-30 " style="margin-top: 1em;"    >
+
+      <div class="panel " ng-repeat="item in questions">
+        <div class="panel-heading">
+          <p class="panel-title1"   >{{item.id}}. {{item.question}}</p>
+        </div>
+
+
+        <div class="panel-body" >             
+
+          <ul style="margin-top: 2em ;height: 100px">
+             <label>
+          
+            <li id="opt_1"  style="margin-left: 10%" >
+              <input  ng-value="true" type="radio" ng-click="select_ans(item.options[0],0,item.question,item)" name="{{item.question}}"  /> 
+                 <b> {{item.options[0]}}</b>
+              </li>
+              </label>
+            <label>
+              <ll  id="opt_2" ng-click="select_ans(item.options[1],1,item.question)"   style="float: right;margin-top: -1.5em;margin-right: 20%">
+                <input  type="radio" name="{{item.question}}" />
+                <b>{{item.options[1]}}</b>
+              </ll>
+              </label>
+              <label>
+              <li  ng-if="item.options[2] !==undefine" ng-click="select_ans(item.options[2],2,item.question)" style="margin-left: 10%;margin-top: 15%" >
+                <input  type="radio" name="{{item.question}}" /> 
+                <b>{{item.options[2]}}</b>
+              </li> 
+              </label>
+               <label>
+              <li  ng-if="item.options[3] !==undefine" ng-click="select_ans(item.options[3],3,item.question)" style="float: right;margin-top: -1.3em;margin-right: 20%;" >
+                <input  type="radio" name="{{item.question}}" /> 
+ 
+                <b>{{item.options[3]}}</b>
+
+
+              </li> 
+              </label>
+
+            
+            </ul>
+
+          </div>
+
+        </div>
+      
+        <input class="panel" type="submit" ng-click="select_an()" style="margin-top: 1em ;align-content: center;margin-left:37%" class="btn btn-primary btn" role="button" value="VOTE"  />
+      </div> 
+     
+
+</ion-content>
+</ion-view>

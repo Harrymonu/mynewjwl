@@ -1,0 +1,416 @@
+
+
+  <ion-content ng-scroll="true"  delegate-handle="mainScroll" style="margin-top: 5em; background-color:  #f5f5f0">
+<div style="width: 100%;">
+ <div class="card">
+  <!--  <img srcset="https://ii2.pepperfry.com/media/wysiwyg/banners/hp_sun_promo_22_may_20171.png" style="width: 100%"> -->
+   <img
+  sizes="(min-width: 40em) 100vw, 100vw"
+  srcset="https://ii2.pepperfry.com/media/wysiwyg/banners/hp_sun_promo_22_may_20171.png 375w,
+          https://ii2.pepperfry.com/media/wysiwyg/banners/hp_sun_promo_22_may_20171.png 480w,
+          https://ii2.pepperfry.com/media/wysiwyg/banners/hp_sun_promo_22_may_20171.png 768w"
+  alt="…">
+ </div>
+ <div style="margin-left: 2%">
+     <div class = "row">
+        
+        <div class = "col-20">
+         <div class="card" style="width: 118%;margin-left: 5%">
+            <img style="width: 75%;margin-left: 13%;margin-top:7%"  ng-src="img/armchair.png">
+            <p style="text-align-last: center;font-size:75%"><b>Furniture</b></p >
+           </div>
+           </div>
+          
+           <div class = "col-20">
+            <div class="card" style="width: 118%;margin-left: 25%">
+            <img style="width: 75%;margin-left: 13%;margin-top:7%"  ng-src="img/iron.png">
+             <p style="text-align-last: center;font-size:75%"><b>HouseKeeping</b></p>
+           </div>
+           </div>
+           <div class = "col-20">
+        <div class="card" style="width: 118%;margin-left: 46% ">
+           <img style="width: 75%;margin-left: 13%;margin-top:7%"  ng-src="img/armchair.png">
+             <p style="text-align-last: center;font-size:75%"><b>HouseKeeping</b></p>
+           </div>
+           </div>
+     <div class = "col-20">
+    <div class="card" style="width: 118%;margin-left: 67%">
+           <img style="width: 75%;margin-left: 13%;margin-top:7%"  ng-src="img/armchair.png">
+             <p style="text-align-last: center;font-size:75%"><b>HouseKeeping</b></p>
+           </div>
+           </div>
+  
+</div>
+</div>
+ <div style="margin-left: 2%;margin-top: -6%">
+     <div class = "row">
+        
+        <div class = "col-20">
+         <div class="card" style="width: 118%;margin-left: 5%">
+            <img style="width: 75%;margin-left: 13%;margin-top:7%"  ng-src="img/armchair.png">
+              <p style="text-align-last: center;font-size:75%"><b>HouseKeeping</b></p>
+           </div>
+           </div>
+          
+           <div class = "col-20">
+            <div class="card" style="width: 118%;margin-left: 25%">
+            <img style="width: 75%;margin-left: 13%;margin-top:7%"  ng-src="img/armchair.png">
+              <p style="text-align-last: center;font-size:75%"><b>HouseKeeping</b></p>
+           </div>
+           </div>
+           <div class = "col-20">
+        <div class="card" style="width: 118%;margin-left: 46% ">
+           <img style="width: 75%;margin-left: 13%;margin-top:7%"  ng-src="img/armchair.png">
+             <p style="text-align-last: center;font-size:75%"><b>HouseKeeping</b></p>
+           </div>
+           </div>
+     <div class = "col-20">
+    <div class="card" style="width: 118%;margin-left: 67%">
+           <img style="width: 75%;margin-left: 13%;margin-top:7%"  ng-src="img/armchair.png">
+             <p style="text-align-last: center;font-size:75%"><b>HouseKeeping</b></p>
+           </div>
+           </div>
+  
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div class="card padding1">
+      <ion-item  class="item1">
+        <ion-scroll   direction="x" zooming="false" delegate-handle="horizontal2"  horizontal-scroll-fix="mainScroll">
+          <div class="row">
+            <div ng-repeat="item in  dining">
+              <div class="offerDiscount"><img src="img/discount.png" style="width: 100px;height: 100px;" alt=""></div>
+                <img class="carditem" ng-click="onclick(item.image)"  ng-src={{item.image}}>
+                </div>
+              </div>
+            </ion-scroll>
+          </ion-item>
+          <div>
+            <h3 style="text-align:center"><b>CHAIRS</b></h3>
+            <h6 style="text-align:center;margin-top: -10px;">CHAIRY TALES</h6>
+          </div>
+
+        </div>
+
+        <div class="card padding1">
+          <div class="offerDiscount"><img src="img/offerbig.png" style="width: 100px; margin-top: 15px;" alt=""></div>
+          <div style="position: absolute;"><p style="width: 100px; margin-top: 17px;color: white ; margin-left: 270%;"  > &#8377;3000 off*</p></div>
+            <img class="carditem" ng-click="onclick(item.image)"  ng-src="https://ii1.pepperfry.com/media/catalog/product/i/l/568x284/illinois-queen-bed-with-storage-in-natural-mango-wood-finish-by-woodsworth-illinois-queen-bed-with-s-906vf7.jpg">
+
+
+              <div>
+
+                <h3 style="text-align:center"><b>DEDS</b></h3>
+                <h6 style="text-align:center;margin-top: -10px;">TAKE A SIESTA</h6>
+              </div>
+
+            </div>
+            <!-- this is for card divider -->
+
+            <div class="card">
+              <div class="row">
+                <div class="col s6 " style="padding: 0px;">
+                 <div style="position: absolute;"><img style="width: 100px;; margin-top: 10px;" src="img/offerorg.png"  ></div>
+                  <div style="position: absolute;"><p style="width: 100px; margin-top: 10px;color: white ; margin-left: 10%;"  >&#8377;1500 off*</p></div>
+                    <img style="height: 150px;width: 182px;align-items: center;margin-left: ;" ng-click="onclick(item.image)"  ng-src="https://ii1.pepperfry.com/media/catalog/product/f/l/568x284/florence-fantasy-lhs-three-seater-sofa-with-lounger---cushions-in-citron-green-colour-by-casacraft-f-gxozt0.jpg">
+                      <div>
+                        <h5 style="text-align:center"><b>SOFAS</b></h4>
+                        <h6 style="text-align:center;margin-top: -10px;">CHAIRY TALES</h6>
+                      </div>
+                    </div>
+                    <div class="col s6 " style="padding: 0px;">
+                     <div style="position: absolute;"><img style="width: 100px;margin-left: 83px; margin-top: 10px;" src="img/offerorgright.png"  ></div>
+                      <div style="position: absolute;"><p style="width: 100px; margin-top: 10px;color: white ; margin-left: 111%;"  > &#8377;1200 off*</p></div>
+                        <img style="height: 150px;width: 182px;align-items: center;" ng-click="onclick(item.image)"  ng-src="https://ii1.pepperfry.com/media/catalog/product/l/a/494x544/lara--study-and-laptop-table-in-provinicial-teak-finish-by-woodsworth-lara--study-and-laptop-table-i-vpyqgo.jpg">
+                          <div>
+                            <h5 style="text-align:center"><b>BOOK CASES</b></h5>
+                            <h6 style="text-align:center;margin-top: -10px;">CHAIRY TALES</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col s6 " style="padding: 0px;">
+                          <div style="position: absolute;"><img style="width: 100px;; margin-top: 10px;" src="img/offerorg.png"  ></div>
+                  <div style="position: absolute;"><p style="width: 100px; margin-top: 10px;color: white ; margin-left: 10%;"  > &#8377;500 off*</p></div>
+                            <img style="height: 150px;width: 182px;align-items: center;" ng-click="onclick(item.image)"  ng-src="https://ii1.pepperfry.com/media/catalog/product/c/a/494x544/cali-study---laptop-table-in-provincial-teak-finish-by-woodsworth-cali-study---laptop-table-in-provi-hgqc5w.jpg">
+                              <div>
+                                <h5 style="text-align:center"><b>CHAIRS</b></h5>
+                                <h6 style="text-align:center;margin-top: -10px;">CHAIRY TALES</h6>
+                              </div>
+                            </div>
+                            <div class="col s6 " style="padding: 0px;">
+                               <div style="position: absolute;"><img style="width: 100px;margin-left: 83px; margin-top: 10px;" src="img/offerorgright.png"  ></div>
+                      <div style="position: absolute;"><p style="width: 100px; margin-top: 10px;color: white ; margin-left: 111%;"  > &#8377;1200 off*</p></div>
+                                <img style="height: 150px;width: 182px;align-items: center;" ng-click="onclick(item.image)"  ng-src="https://ii1.pepperfry.com/media/catalog/product/r/i/494x544/rikotu-two-door-wardrobe-two-drawers-in-wenge-finish-by-mintwud-rikotu-two-door-wardrobe-two-drawers-xs5mzs.jpg">
+                                  <div>
+                                    <h5 style="text-align:center"><b>WARDROBES</b></h5>
+                                    <h6 style="text-align:center;margin-top: -10px;">CHAIRY TALES</h6>
+                                  </div>
+                                </div>
+
+
+
+                              </div>
+                            </div>
+
+                               <div class="card" style="margin-top: 10px;">
+                               <div style="text-align-last: center;">
+                                 <h4> <b>DEORE UNLIMITED</b></h4>
+                                 <p style="margin-top: -10px;font-size: 75%;">THOUSANDS FOR THE DISCERNING</p>
+
+                               </div>
+              <div class="row">
+                <div class="col s6 " style="padding: 0px;">
+                  <div style="position: absolute;"><img style="width: 100px;; margin-top: 10px;" src="img/offerblue.png"  ></div>
+                  <div style="position: absolute;"><p style="width: 100px; margin-top: 10px;color: white ; margin-left: 10%;"  > &#8377;1500 off*</p></div>
+                    <img style="height: 150px;width: 182px;align-items: center;margin-left: ;" ng-click="onclick(item.image)"  ng-src="https://ii1.pepperfry.com/media/catalog/product/c/l/800x880/cleveland-bed-side-table-in-provincial-teak--finish-by-woodsworth-cleveland-bed-side-table-in-provin-eophfa.jpg">
+                      <div>
+                        <h5 style="text-align:center"><b>BEDSIDE TABLES</b></h4>
+                        <h6 style="text-align:center;margin-top: -10px;">CHAIRY TALES</h6>
+                      </div>
+                    </div>
+                    <div class="col s6 " style="padding: 0px;">
+                      <div style="position: absolute;"><img style="width: 100px;margin-left: 83px; margin-top: 10px;" src="img/offerorgright.png"  ></div>
+                      <div style="position: absolute;"><p style="width: 100px; margin-top: 10px;color: white ; margin-left: 111%;"  > &#8377;1500 off*</p></div>
+                        <img style="height: 150px;width: 182px;align-items: center;" ng-click="onclick(item.image)"  ng-src="https://ii1.pepperfry.com/media/catalog/product/j/u/494x544/jurou-three-door-shoe-cabinet-in-two-tone-wenge-finish-by-mintwud-jurou-three-door-shoe-cabinet-in-t-8demxb.jpg">
+                          <div>
+                            <h5 style="text-align:center"><b>SHOE RACKSS</b></h5>
+                            <h6 style="text-align:center;margin-top: -10px;">CHAIRY TALES</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col s6 " style="padding: 0px;">
+                        <div style="position: absolute;"><img style="width: 100px;; margin-top: 10px;" src="img/offerorg.png"  >
+                        </div>
+                          <div style="position: absolute;"><p style="width: 100px; margin-top: 10px;color: white ; margin-left: 10%;" > &#8377;1000 off*</p>
+                          </div>
+                            <img style="height: 150px;width: 182px;align-items: center;" ng-click="onclick(item.image)"  ng-src="https://ii1.pepperfry.com/media/catalog/product/t/i/494x544/tiber-study---laptop-table-with-chair-in-premium-acacia-finish-by-woodsworth-tiber-study---laptop-ta-pfevb8.jpg">
+                              <div>
+                                <h5 style="text-align:center"><b>Study & Laptop Table </b></h5>
+                                <h6 style="text-align:center;margin-top: -10px;">CHAIRY TALES</h6>
+                              </div>
+                            </div>
+                            <div class="col s6 " style="padding: 0px;">
+                               <div style="position: absolute;"><img style="width: 100px;margin-left: 83px; margin-top: 10px;" src="img/offerorgright.png"  ></div>
+                      <div style="position: absolute;"><p style="width: 100px; margin-top: 10px;color: white ; margin-left: 111%;"  > &#8377;900 off*</p>
+                      </div>
+                                <img style="height: 150px;width: 182px;align-items: center;" ng-click="onclick(item.image)"  ng-src="https://ii1.pepperfry.com/media/catalog/product/t/i/494x544/tiber-entertainment-unit-in-premium-acacia-finish-by-woodsworth-tiber-entertainment-unit-in-premium--mk4swn.jpg">
+                                  <div>
+                                    <h5 style="text-align:center"><b>ENTERTAINMENT UNITS</b></h5>
+                                    <h6 style="text-align:center;margin-top: -10px;">CHAIRY TALES</h6>
+                                  </div>
+                                </div>
+
+
+
+                              </div>
+                              </div>
+                              </div>
+
+
+
+                            </ion-content>
+
+
+                          </ion-view> -->
+
+
+                          
+
+
+
+             
+                    
+                     
+   <!-- 
+
+            <ion-item  class="item2">
+                <ion-scroll   direction="x" zooming="false" delegate-handle="horizontal2"  horizontal-scroll-fix="mainScroll">
+                    <div class="row">
+
+                        <div class="thumbnail" ng-repeat="item in bed">
+                                 <i class=" button_image1 icon ion-ios-trash"  ng-click="delete_item(item,bed)"></i> 
+                              <div class="wrapper1"  >
+                                 RoyalOak Grand <br>Two-Seater Motorised Recliner with </br>Brown Upholstery
+                        </div>
+                            <img class="img_box1" alt="vfhgkjfdgdfh"  ng-src="{{item.image}}">
+
+
+                            </div>
+                        </div> 
+
+
+                    </ion-scroll>        
+                </ion-item>
+
+                <ion-item  class="item1">
+                    <ion-scroll   direction="x" zooming="false" delegate-handle="horizontal3" horizontal-scroll-fix="mainScroll" >
+                        <div class="row">
+                            <div class="thumbnail" ng-repeat="item in tv">
+                                         <i class=" button_image icon ion-ios-trash"  ng-click="delete_item(item,tv)"></i> 
+                                       <a  class="wrapper" >RoyalOak Grand Two-Seater Motorised Recliner with Brown Upholstery</a>
+                                <img class="img_box"  ng-src="{{item.image}}">
+
+                                   
+                                </div>
+                            </div> 
+
+
+                        </ion-scroll>        
+                    </ion-item>
+
+
+
+                    <ion-item  class="item1">
+                        <ion-scroll   direction="x" zooming="false" delegate-handle="horizontal4" horizontal-scroll-fix="mainScroll" >
+                            <div class="row">
+                                <div class="thumbnail" ng-repeat="item in tv1">
+
+                                          <i class=" button_image icon ion-ios-trash"  ng-click="delete_item(item,tv1)"></i> 
+                                         <a  class="wrapper" >RoyalOak Grand Two-Seater Motorised Recliner with Brown Upholstery</a>
+                                    <img class="img_box" ng-src="{{item.image}}">
+                                       
+
+                                    </div>
+                                </div> 
+
+
+                            </ion-scroll>       
+                        </ion-item>
+
+                        <ion-item class="item3">
+                            <ion-scroll   direction="x" zooming="false" delegate-handle="horizonta5" horizontal-scroll-fix="mainScroll" >
+
+                                <div class="row">
+                                    <div class="thumbnail" ng-repeat="item in  dining1"  ng-click="delete_item(item,dinig1)">
+                                                  <i class=" button_image2 icon ion-ios-trash"></i> 
+                                               <a  class="wrapper2" >RoyalOak Grand Two-Seater Motorised Recliner with Brown Upholsteryr</a>
+                                        <img class="img_box2" ng-src="{{item.image}}">
+                                            
+
+                                        </div>
+                                    </div>
+                                </ion-scroll>        
+                            </ion-item>
+
+
+</div>
+
+                        </ion-content>
+
+
+                    </ion-view>
+
+
+ -->
+
+
+
+         <!--            this is for swap
+                     <ion-content   delegate-handle="mainScroll" style="background-color: white;margin-top: 3em;">
+
+        <ion-item class="item1">
+            <ion-scroll   direction="x" zooming="false" delegate-handle="horizontal" horizontal-scroll-fix="mainScroll" >
+<div class="col col 30">
+                <div class="row">
+                    <div  ng-repeat="item in  dining">
+                     <i class=" button_image icon ion-ios-trash" ng-click="delete_item(item,dining)" ></i> 
+                     <div class="wrapper"  >
+                       RoyalOak Grand Two-Seater<br> Motorised Recliner with </br>Brown Upholstery
+                        </div>
+                         <img class="img_box" ng-click="onclick(item.image)"  ng-src="{{item.image}}">
+                           
+                        </div>
+
+                    </div>
+                    </div>
+                </ion-scroll>        
+            </ion-item>
+
+
+            <ion-item  class="item2">
+                <ion-scroll   direction="x" zooming="false" delegate-handle="horizontal2"  horizontal-scroll-fix="mainScroll">
+                    <div class="row">
+
+                        <div class="thumbnail" ng-repeat="item in bed">
+                                 <i class=" button_image1 icon ion-ios-trash"  ng-click="delete_item(item,bed)"></i> 
+                              <div class="wrapper1"  >
+                                 RoyalOak Grand <br>Two-Seater Motorised Recliner with </br>Brown Upholstery
+                        </div>
+                            <img class="img_box1" alt="vfhgkjfdgdfh"  ng-src="{{item.image}}">
+
+
+                            </div>
+                        </div> 
+
+
+                    </ion-scroll>        
+                </ion-item>
+
+                <ion-item  class="item1">
+                    <ion-scroll   direction="x" zooming="false" delegate-handle="horizontal3" horizontal-scroll-fix="mainScroll" >
+                        <div class="row">
+                            <div class="thumbnail" ng-repeat="item in tv">
+                                         <i class=" button_image icon ion-ios-trash"  ng-click="delete_item(item,tv)"></i> 
+                                       <a  class="wrapper" >RoyalOak Grand Two-Seater Motorised Recliner with Brown Upholstery</a>
+                                <img class="img_box"  ng-src="{{item.image}}">
+
+                                   
+                                </div>
+                            </div> 
+
+
+                        </ion-scroll>        
+                    </ion-item>
+
+
+
+                    <ion-item  class="item1">
+                        <ion-scroll   direction="x" zooming="false" delegate-handle="horizontal4" horizontal-scroll-fix="mainScroll" >
+                            <div class="row">
+                                <div class="thumbnail" ng-repeat="item in tv1">
+
+                                          <i class=" button_image icon ion-ios-trash"  ng-click="delete_item(item,tv1)"></i> 
+                                         <a  class="wrapper" >RoyalOak Grand Two-Seater Motorised Recliner with Brown Upholstery</a>
+                                    <img class="img_box" ng-src="{{item.image}}">
+                                       
+
+                                    </div>
+                                </div> 
+
+
+                            </ion-scroll>       
+                        </ion-item>
+
+                        <ion-item class="item3">
+                            <ion-scroll   direction="x" zooming="false" delegate-handle="horizonta5" horizontal-scroll-fix="mainScroll" >
+
+                                <div class="row">
+                                    <div class="thumbnail" ng-repeat="item in  dining1"  ng-click="delete_item(item,dinig1)">
+                                                  <i class=" button_image2 icon ion-ios-trash"></i> 
+                                               <a  class="wrapper2" >RoyalOak Grand Two-Seater Motorised Recliner with Brown Upholsteryr</a>
+                                        <img class="img_box2" ng-src="{{item.image}}">
+                                            
+
+                                        </div>
+                                    </div>
+                                </ion-scroll>        
+                            </ion-item>
+
+
+
+
+                        </ion-content>
+
+
+                    </ion-view> -->

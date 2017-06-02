@@ -1,0 +1,147 @@
+
+
+    <ion-view view-title="Your Title!" style="background-color: #f1f1f1;"  >
+
+<ion-header-bar align-title="left" class="bar-royal">
+  <div class="bar_left">
+    <i  ng-click="myGoBack()" class="button-icon icon ion-arrow-left-c"></i>
+  </div>
+  <div class="bar_left" style="font-size: 125%">
+   <i >Cart({{ total_qty }})</i>
+  </div>
+ 
+  
+</ion-header-bar>
+
+   
+
+      
+
+
+ <ion-content style="margin-top: 2.0em ; ">
+
+
+
+
+
+
+
+  <div  class="card "  ng-repeat="item in cart"   >
+         
+        
+         <div class="row1" >
+               
+                    <div class="col1"  > 
+                       <img  src="{{item.cart_item_image}}" style="margin-left:.5em " width="100" height="100" />
+                    </div>
+                    <div class="col2"> 
+
+                           <div class="overflow1">
+                          <h6 ><b>{{item.cart_item_name}}</b></h6>
+                          </div>
+
+                       <div class = "row" style="height:2em; ">
+                                   <div  class = "col col-20" style="text-align: center;"> <i  class="icon ion-ios-minus-outline" ng-click="dec(item.cart_item_id)" ></i></div>
+                                   <div class = "col col-20"><input  type="num" style="width: 1.3em;background-color: transparent;text-align:right;" placeholder="{{item.cart_item_qty}}" readonly="true"   />
+                                  
+                                   </div>
+                                  <!--  <div class = "col col-10"><i " class="icon ion-ios-plus-outline"></div> -->
+                                  <div  class = "col col-20" style="text-align: center;"> <i  class="icon ion-ios-plus-outline"  ng-click="inc(item.cart_item_id)"  ></i></div>
+                              </div>
+
+                                         <div>
+                                             <div clss=row>
+
+                                                   <table class="table1">
+              
+                                                      <tr class="tr11">
+                                                         <td class="td1"> Deliver By:<br/>Not available</td>
+                                                          <td class="td1">COD:</br>Not available </td>
+                                                          <td class="td1">Assembly:</br>By Royaloak</td>
+                                                         </tr>
+
+                                                     </table>
+
+                                                      
+                                                      
+                                             </div>
+                                            
+                                             <div>
+                                               <p style="font-size:50%;color: red; ">Only 1 left in stock</p>
+
+                                             </div>
+
+                                      </div>
+                            </div>
+                    </div>
+                              <div style="margin-top:1em; ">
+                                   <div style="  float:left;margin-left: 35%;" >
+                                            <p  style=" font-size: 100%; color: black; " > <b ><i id="price">{{ item.cart_item_qty *  item.cart_item_price  }}</i></b> </p>
+                                             <!-- <input style="width: 6em;background-color: transparent; text-align:center;text-decoration-color: red " type="num_price"  placeholder="&#8377;45,850" readonly="true"  id="item" /> -->
+                                    </div>
+                                   
+                                    <div style="  float:right;margin-right:5%; ">
+                                             <i class="icon ion-android-delete" ng-click="removeFromCart(item.cart_item_id,item.item_price_list)"></i>
+                                     </div>
+                             </div>
+
+
+
+ </div> <!-- card end -->
+
+
+
+
+
+
+
+  <div ng-if="total_qty!=0" class="card list" style="margin-bottom: 5.0em "  id="item_price_list" >
+   <div class="item item-divider" style="background-color: white;">
+     <p>PRICE DETAILS</p>
+   </div>
+   
+   <div class="item item-text-wrap">
+         <div style="float;left;">
+           <p>Price(<i id="item_total" >{{ total_qty}}</i> item)</p>
+         </div>
+         <div style="float:right ;margin-top:-1em;">
+           <p> <b >&#8377;<i id="cardprice">{{total_amount}} </i></b></p>
+         </div>
+
+        <div style="float;left;margin-top: 1.0em">
+           <p>Delivery</p>
+         </div>
+         <div style="float:right ;margin-top:-1em;">
+           <p> <b >&#8377;<i id="deliveryprice"> </i></b></p>
+         </div>
+         <hr class='dotted' />
+   
+       <div style="float;left;margin-top: 1.0em;">
+           <p><b style="color:black;">Amount Payable</b></p>
+         </div>
+         <div style="float:right ;margin-top:-1em;color:black;">
+           <p> <b>&#8377; <i id="totalcardprice">{{total_amount}} </i></b></p>
+         </div>
+
+   </div>
+   
+   <div class="item item-divider" style="background-color: white;">
+     <p style="color: green;">You Will Save &#8377;30 on this order </p>
+   </div>
+ 
+
+
+ <div style="margin-top: .5em">
+            <button  class="button" ng-click ="Login()"> SIGN IN </button>
+    </div>
+</div>
+
+      </ion-content>
+    
+
+   
+    </ion-view>
+
+    
+    
+    

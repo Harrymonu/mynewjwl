@@ -1,0 +1,50 @@
+<ion-side-menus  ng-controller="SideMenuCtrl " enable-menu-with-back-views="false">
+  <ion-side-menu-content  drag-content="false" >
+    <ion-nav-bar  class="bar-royal">
+      
+      <ion-nav-buttons  side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+<div class="buttonscart">
+         <button class="button button-icon button-clear icon icon ion-ios-cart-outline" 
+           ng-click="Cart()">
+          
+        </button>
+        </div>
+<div class="buttonsadd">
+         <button class="button button-icon button-clear button pull-right button-icon icon ion-plus" ng-click="Additems()">
+           
+      </button>
+      </div>
+<div class="buttonssetting">
+        <button class="button button-icon button-clear icon ion-android-more-vertical"  ng-click="Cart()" >
+        </button>
+        </div>
+</div>
+      </ion-nav-buttons>
+      <ion-content  >
+     
+      
+       
+        </ion-content>
+
+
+     
+      
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu  >
+
+    <ion-content ng-controller="SideMenuCtrl" ng-class="theme" >
+        <div class="sidemenu-header">
+          <img class="logo" src="img/ROYALOAK.png"/>
+        </div>
+        <ion-list >
+          <ionic-sidemenu tree="tree"></ionic-sidemenu>
+        </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+</ion-side-menus>

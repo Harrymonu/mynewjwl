@@ -1,0 +1,59 @@
+
+ <style>
+    .button
+        {
+    border: 1px solid #c0c0c0;
+    border-radius: 6px;
+    color: #f0f0f0;
+    background-color:#e94040;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.1);
+    margin-left: 25%;
+    width: 50%;
+    font-family: sans-serif;
+    text-shadow: transparent;
+ }
+       
+     
+       
+    
+input[type=tel] {
+    width: 50%;
+    height: 20%;
+    padding: 12px 20px;
+
+    margin-left:25% ;
+    box-sizing: border-box;
+    border:1px;
+    text-align: center;
+
+    border: 1px solid #f2400e;
+}
+
+</style>
+    <ion-view >
+   
+<ion-content scroll="false" >
+<div  >
+<div style="margin-top: 20%">
+   <img src="img/ROYALOAK.png" style="width: 60%;  margin-left: 20%;" />
+
+</div>
+
+
+  <p >
+      <h4 style="margin-left:25%;margin-top: 2.0em;"><b>MOBILE VERIFICATION</b></h4>
+  </p>
+        <div class="padding" style="margin-top: 2.0em">
+                 <input  type="tel" placeholder="Enter OTP" id ="otp" />
+       </div>
+      
+ 
+     <div style="margin-top: 1.5em">
+            <button  class="button" ng-click="Verify()" >VERIFY </button>
+    </div>
+   </div>
+
+</ion-content>
+
+
+</ion-view>
